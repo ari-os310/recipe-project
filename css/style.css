@@ -1,13 +1,28 @@
-head {
-    text-align: center;
-    color: white;
-  
-  }
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+height: 100%;
 
-  .topnav a.active {
-    background-color: rgb(208, 243, 14, .3);
-    color: white;
-  }
+}
+
+#container{
+  min-height: 100%;
+}
+
+#main{
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+ body{
+  background: url(https://cdn.pixabay.com/photo/2012/12/14/11/36/spicy-69984_960_720.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+ } 
+
   
   .topnav a {
     float: right;
@@ -18,15 +33,16 @@ head {
     font-size: 17px;
   }
 
-  .topnav a:hover, .dropdown:hover
-  .dropbtn {
-    background-color: rgb(208, 243, 14, .3);
-    color: black;
-  }
-
-  .topnav {
+  .topnav a:hover, 
+  .topnav,
+  .topnav:hover,
+  .dropdown:hover,
+  .dropbtn ,
+  .dropbtn:hover{
+    background-color: rgb(208, 243, 14, .5);
+    color: rgb(7, 0, 0);
     overflow: hidden;
-    background-color:rgb(208, 243, 14, .2);
+    
   }
   
   .dropdown {
@@ -48,9 +64,9 @@ head {
   .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      background-color: rgb(208, 243, 14, .2);
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 8px 16px 0px rgb(208, 243, 14, .2);
       z-index: 1;
   }
   
@@ -63,13 +79,20 @@ head {
       text-align: left;
   }
   
-  .dropdown-content a:hover {
-      background-color: #ddd;
+  .dropdown-content a:hover,
+  .dropbtn:hover {
+      background-color: rgb(208, 243, 14, .7);
+      color: black;
   }
   
   .dropdown:hover .dropdown-content {
       display: block;
   }
+
+
+ h1{
+   font-family: 'Chewy', cursive ;
+ } 
 
 .ingredients{
     background: rgba(255, 255, 255, 0.65);
@@ -88,4 +111,17 @@ head {
     padding: 5px
 
 }
+
+footer{
+  background-color: rgba(6, 126, 64, 0.65);
+  position: relative;
+  height: 75px;
+  margin-top: -75px;
+  clear: both;
+}
+
+
+/* .copyright {
+  text-align-last: center;
+} */
 
